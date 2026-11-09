@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarthak Shrestha — Learning Today. Creating Tomorrow.</title>
+  <meta name="description" content="Personal portfolio of Sarthak Shrestha, a Grade 9 student and technology enthusiast from Chitwan, Nepal." />
+  <meta name="theme-color" content="#0B0B0D" />
+
+  <!--
+    ======================================================================
+    HOW TO REPLACE THE PLACEHOLDER PHOTOS  (read me first)
+    ======================================================================
+    1. Pick your photographs. Portrait (tall) photos work best.
+    2. Rename them EXACTLY like this and drop them into assets/images/ :
+         profile.jpg     -> big photo in the hero section (best: 4:5 ratio, e.g. 800x1000)
+         about.jpg       -> photo in the About section    (best: 4:5 ratio, e.g. 900x1100)
+         project1.jpg    -> screenshot for Project 1       (best: 16:10, e.g. 1400x900)
+         project2.jpg    -> screenshot for Project 2
+         project3.jpg    -> screenshot for Project 3
+         interest1.jpg, interest2.jpg, interest3.jpg -> square photos for Interests
+    3. Overwrite the old files. Refresh the browser (Ctrl+F5 / Cmd+Shift+R).
+    Using a different file name or a .png? Just change the src="" in the
+    matching <img> tag below. Images are cropped with object-fit: cover,
+    so they never stretch; keep the face near the centre of the photo.
+    ======================================================================
+  -->
+
+  <!--
+    Fonts: loaded from Google Fonts (Fraunces for headings, Inter for text).
+    To use them offline, download the font files into assets/fonts/ and add
+    @font-face rules at the top of style.css. System fonts are the fallback.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ============================== NAVBAR ============================== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Sarthak Shrestha — back to home">SS<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#interests" class="nav-link">Interests</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="home" data-section>
+      <div class="hero__bg-mark" aria-hidden="true">SS</div>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Hello, I'm</p>
+          <h1 class="hero__title reveal" style="--d:80ms">
+            <span>Sarthak</span>
+            <span>Shrestha</span>
+          </h1>
+          <p class="hero__subtitle reveal" style="--d:160ms">Student. Creative Thinker. Future Innovator.</p>
+          <p class="hero__desc reveal" style="--d:220ms">
+            Exploring technology, developing new skills, and turning curiosity into creativity.
+          </p>
+
+          <div class="hero__actions reveal" style="--d:280ms">
+            <a href="#projects" class="btn btn--primary">
+              Explore My Work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+          </div>
+
+          <ul class="hero__meta reveal" style="--d:340ms">
+            <li>Currently studying in Grade 9.</li>
+            <li>Chitwan, Nepal.</li>
+          </ul>
+        </div>
+
+        <!-- HERO PHOTO: replace assets/images/profile.jpg with your portrait -->
+        <figure class="hero__photo reveal" style="--d:200ms">
+          <div class="hero__photo-stage">
+            <div class="hero__photo-frame">
+              <img src="public/img/About.jpg" alt="Portrait of Sarthak Shrestha" width="800" height="1000" />
+              <span class="corner corner--tl" aria-hidden="true"></span>
+              <span class="corner corner--br" aria-hidden="true"></span>
+            </div>
+            <span class="hero__photo-offset" aria-hidden="true"></span>
+          </div>
+          <figcaption class="hero__caption">
+            <span>Fig. 01</span> Learning Today. Creating Tomorrow.
+          </figcaption>
+        </figure>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section about" id="about" data-section>
+      <div class="container about__grid">
+
+        <!-- ABOUT PHOTO: replace assets/images/about.jpg -->
+        <figure class="about__photo reveal">
+          <div class="about__photo-frame">
+            <img src="public/img/profile.jpg" alt="Sarthak Shrestha, photographed for the About section" width="900" height="1100" loading="lazy" />
+          </div>
+          <figcaption class="about__tag">Chitwan, Nepal</figcaption>
+        </figure>
+
+        <div class="about__content">
+          <p class="section-index reveal">01 — About</p>
+          <h2 class="section-title reveal" style="--d:60ms">A little about me.</h2>
+          <p class="lead reveal" style="--d:120ms">
+            I'm Sarthak, a Grade 9 student at Sainik Awasiya MahaVidyala, Chitwan. I'm interested in technology, creativity, and discovering new possibilities. I believe every day is an opportunity to learn something new and improve myself.
+          </p>
+
+          <dl class="facts reveal" style="--d:180ms">
+            <div><dt>Name</dt><dd>Sarthak Shrestha</dd></div>
+            <div><dt>Education</dt><dd>Grade 9</dd></div>
+            <div><dt>School</dt><dd>Sainik Awasiya MahaVidyala</dd></div>
+            <div><dt>Location</dt><dd>Chitwan, Nepal</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EDUCATION ============================== -->
+    <section class="section education" id="education" data-section>
+      <div class="container education__grid">
+        <div class="education__head">
+          <p class="section-index reveal">02 — Education</p>
+          <h2 class="section-title reveal" style="--d:60ms">My education.</h2>
+        </div>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <p class="timeline__date">Present</p>
+            <h3 class="timeline__title">Sainik Awasiya MahaVidyala</h3>
+            <p class="timeline__place">Chitwan, Nepal</p>
+            <p class="timeline__text">Current grade: 9.</p>
+          </li>
+          <!--
+            To add more entries later, copy the <li> above and edit it.
+            Example: another school, a course, or a workshop you attended.
+          -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section skills" id="skills" data-section>
+      <div class="container">
+        <p class="section-index reveal">03 — Skills</p>
+        <h2 class="section-title reveal" style="--d:60ms">What I'm learning.</h2>
+
+        <ul class="skill-list">
+          <li class="skill reveal">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+            <span class="skill__no">01</span>
+            <h3>HTML</h3>
+            <p>Structuring content with meaning.</p>
+          </li>
+          <li class="skill reveal" style="--d:60ms">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg>
+            <span class="skill__no">02</span>
+            <h3>CSS</h3>
+            <p>Layout, type and visual detail.</p>
+          </li>
+          <li class="skill reveal" style="--d:120ms">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>
+            <span class="skill__no">03</span>
+            <h3>JavaScript</h3>
+            <p>Making pages respond and move.</p>
+          </li>
+          <li class="skill reveal">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.6.6 1 1.4 1 2.2V16h6v-.3c0-.8.4-1.6 1-2.2A6 6 0 0012 3z"/></svg>
+            <span class="skill__no">04</span>
+            <h3>Creative Thinking</h3>
+            <p>Looking for new angles on ideas.</p>
+          </li>
+          <li class="skill reveal" style="--d:60ms">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4h4v3a2 2 0 002 2h3v4h-3a2 2 0 00-2 2v3h-4v-3a2 2 0 00-2-2H5V9h3a2 2 0 002-2z"/></svg>
+            <span class="skill__no">05</span>
+            <h3>Problem Solving</h3>
+            <p>Breaking big problems into small steps.</p>
+          </li>
+          <li class="skill reveal" style="--d:120ms">
+            <svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11a2.1 2.1 0 00-3-3L5 16zM14 7l3 3"/></svg>
+            <span class="skill__no">06</span>
+            <h3>Digital Creativity</h3>
+            <p>Turning ideas into things on a screen.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section projects" id="projects" data-section>
+      <div class="container">
+        <p class="section-index reveal">04 — Projects</p>
+        <h2 class="section-title reveal" style="--d:60ms">My selected work.</h2>
+
+        <!--
+          HOW TO EDIT A PROJECT
+          - Screenshot: replace assets/images/projectN.jpg
+          - Title / description / technologies: edit the text below
+          - Buttons: put your real links into the two href="#" attributes.
+            (Links left as "#" do nothing, so nothing is broken in the meantime.)
+        -->
+
+        <!-- Project 1: large image left, text right -->
+        <article class="project project--one">
+          <a class="project__media reveal" href="#" data-placeholder-link aria-label="Open Project One live demo">
+            <img src="public/img/Proj 1.png" alt="Screenshot of Project One" width="1400" height="900" loading="lazy" />
+          </a>
+          <div class="project__body reveal" style="--d:100ms">
+            <p class="project__no">Project 01</p>
+            <h3 class="project__title">FreshMart
+            </h3>
+            <p class="project__desc">One of the famous mart of the Nepal, Freshmart located in Kathmandu,Valley.This is built to fullfill the daily needs of people.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project__links">
+              <a href="https://freshmartnepal.vercel.app/"target='_blank'
+             class="btn btn--primary" data-placeholder-link>Live Demo</a>
+              <a href="#" class="btn btn--ghost" data-placeholder-link>Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: text left, image right (reversed) -->
+        <article class="project project--two">
+          <a class="project__media reveal" href="#" data-placeholder-link aria-label="Open Project Two live demo">
+            <img src="public/img/FreshMart.png" alt="Screenshot of Project Two" width="1400" height="900" loading="lazy" />
+          </a>
+          <div class="project__body reveal" style="--d:100ms">
+            <p class="project__no">Project 02</p>
+            <h3 class="project__title">Pawhaven</h3>
+            <p class="project__desc">Pawhaven is a premium pet store, veterinary care, pet accecories store.  we're here for every wag, purr and happy moment.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project__links">
+              <a href="https://pawhavennepal.vercel.app/"target='_blank' class="btn btn--primary" data-placeholder-link>Live Demo</a>
+              <a href="#" class="btn btn--ghost" data-placeholder-link>Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: full-width image with text below in two columns -->
+        <!-- <article class="project project--three">
+          <a class="project__media reveal" href="#" data-placeholder-link aria-label="Open Project Three live demo">
+            <img src="assets/images/project3.jpg" alt="Screenshot of Project Three" width="1400" height="900" loading="lazy" />
+          </a>
+          <div class="project__body reveal" style="--d:100ms">
+            <div>
+              <p class="project__no">Project 03</p>
+              <h3 class="project__title">Project title goes here</h3>
+            </div>
+            <div>
+              <p class="project__desc">Describe what you built, why you built it and what you learned. Replace this text with your own words.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a href="#" class="btn btn--primary" data-placeholder-link>Live Demo</a>
+                <a href="#" class="btn btn--ghost" data-placeholder-link>Source Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section> -->4
+
+    <!-- ============================== INTERESTS ============================== -->
+    <section class="section interests" id="interests" data-section>
+      <div class="container">
+        <p class="section-index reveal">05 — Interests</p>
+        <h2 class="section-title reveal" style="--d:60ms">Beyond the screen.</h2>
+
+        <!--
+          Edit the three interests below: change the title and sentence,
+          and replace assets/images/interestN.jpg with your own photos.
+          Need more? Copy a whole <li class="interest"> block.
+        -->
+        <ul class="interest-list">
+          <li class="interest reveal">
+            <figure><img src="assets/images/interest1.jpg" alt="Photo representing my first interest" width="800" height="800" loading="lazy" /></figure>
+            <p class="interest__no">I.</p>
+            <h3>Your first interest</h3>
+            <p>Write a line or two about it.</p>
+          </li>
+          <li class="interest reveal" style="--d:80ms">
+            <figure><img src="assets/images/interest2.jpg" alt="Photo representing my second interest" width="800" height="800" loading="lazy" /></figure>
+            <p class="interest__no">II.</p>
+            <h3>Your second interest</h3>
+            <p>Write a line or two about it.</p>
+          </li>
+          <li class="interest reveal" style="--d:160ms">
+            <figure><img src="assets/images/interest3.jpg" alt="Photo representing my third interest" width="800" height="800" loading="lazy" /></figure>
+            <p class="interest__no">III.</p>
+            <h3>Your third interest</h3>
+            <p>Write a line or two about it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="section contact" id="contact" data-section>
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="section-index reveal">06 — Contact</p>
+          <h2 class="section-title reveal" style="--d:60ms">Let's connect.</h2>
+          <p class="lead reveal" style="--d:120ms">Have a question, an idea or just want to say hello? Send me a message.</p>
+
+          <!-- TODO: replace the three placeholder links below with your real ones -->
+          <ul class="contact__links reveal" style="--d:180ms">
+            <li>
+              <span>Email</span>
+              <a href="mailto:your.email@example.com" id="emailLink">your.email@example.com</a>
+            </li>
+            <li>
+              <span>Instagram</span>
+              <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">@your-username</a>
+            </li>
+            <li>
+              <span>GitHub</span>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate style="--d:120ms">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error" />
+            <p class="field__error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error" />
+            <p class="field__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-error" />
+            <p class="field__error" id="subject-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="field__error" id="message-error" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="logo" aria-label="Back to home">SS<span>.</span></a>
+        <p>Sarthak Shrestha<br />Chitwan, Nepal</p>
+      </div>
+
+      <ul class="footer__social">
+        <li><a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:your.email@example.com" id="footerEmail">Email</a></li>
+      </ul>
+
+      <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </button>
+    </div>
+    <div class="container footer__legal">
+      <p>&copy; <span id="year">2026</span> Sarthak Shrestha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
